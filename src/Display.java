@@ -366,7 +366,7 @@ public class Display extends JFrame {
                         String binaryStringR = Integer.toBinaryString(avg_as);
                         if(binaryStringR.length()<8) binaryStringR= addZeros(binaryStringR);
                
-                        binaryStringR = binaryString.substring(binaryStringR.length() - 8);
+                        binaryStringR = binaryStringR.substring(binaryStringR.length() - 8);
                         char r1=binaryStringR.charAt(0),r2=binaryStringR.charAt(1),r3=binaryStringR.charAt(2),r4=binaryStringR.charAt(3),r5=binaryStringR.charAt(4),r6=binaryStringR.charAt(5);
                         String bs,zz;
                         bs=Integer.toBinaryString(image2d[i*4+k*2+0][j*4+l*2+0]);
@@ -552,7 +552,7 @@ public class Display extends JFrame {
 	            BinfoImage.setRGB(0, 0, N, N, infoImage1d, 0, N);
 	            pnImage_preview.setIcon(new ImageIcon(BinfoImage));
 	            File outputfile = new File("image.jpg");
-	            try {
+	            try {	
 	                ImageIO.write(BinfoImage, "jpg", outputfile);
 	            } catch (IOException e) {
 	                // TODO Auto-generated catch block
